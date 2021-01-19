@@ -1,4 +1,4 @@
-"""Sutton Dole's P3 Assignment 1
+"""Sutton Dole's P1
    Introduction to python
    Greeting someone based on their input
 """
