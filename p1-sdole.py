@@ -1,5 +1,5 @@
 """Sutton Dole's P1
-   Introduction to python
+   Introduction to Python
    Greeting someone based on their input
 """
 

@@ -1,0 +1,122 @@
+Lecture 2 2/10/2021
+
+Python help***
+when we want to exit a script dont use exit() or quit()
+instead use
+import sys
+***********
+**********insert code here
+*********
+sys.exit()
+
+Software development processes
+Fundamental activities
+-specification
+-development
+-validation
+-evolution
+each activity has deliverables
+
+The waterfall model
+-plan driven model. seperate and distinct phases of specification and development
+
+Incremental development
+-specification, development, and validation are interleaved. May be plan-driven or agile
+
+Integration and configuration
+-The system is assembled from existing configurable components. May be plan-driven or agile
+
+In practice, most large systems are developed uses a process that incorporates elements from all these models
+
+Plan driven process are processes where the process activities, usually seperate development stages with outputs, are planned in advance and progress is measured against this plan
+-not necessarily waterfall model - plan driven, incremental development happens
+
+In agile processes, planning is incremental and it is easier to change the process to reflect changing customer requirements.
+
+Waterfall model (image found in repo)
+-pretty self explanatory
+
+Issues:
+Inflexible partitioning of the project into distinct stages makes it difficult to respond to the changing customer requirements
+-therefore this model is only appropriate when the requirements are well understood and changed will be fairly limited during the design process.
+
+The waterfall model is mostly used for large systems engineering projects where a system is developed at several sites
+-In those circumstances, the plan driven nature of the waterfall model helps coordinate the work.
+-The coincident documentation is useful to the large teams working on the project
+
+Incremental development (image found in repo)
+When an initial set of needs is known, but the full work scope is not
+Benefits
+-the cost of accommodating changing customer requirements is reduces
+-it is easier to get customer feedback on the development work that has been done
+-more rapid delivery and deployment of useful software to the customer is possible
+-it is more effecient to fail "small"
+
+downsides
+-System structure degrades with added increments
+-less documentation makes process less visible
+
+Agile development (image found in repo, video found in lecture 2 pdf slides)
+-program specification, design, and implementation are interleaved
+-the system is developed as a series of versions or increments with stakeholders involved in version specification and evaluation
+-frequent delivery of new versions for evaluation
+-extensive tool support
+-minimal documentation-focus on working code
+-based on iterative approach to software development
+-intended to deliver working software quickly and evolve to meet changing requirements
+
+Some agile techniques include:
+-user stories expressing requirements
+-pair programaming, collective ownership of code
+-test driven development (testing after every code change)
+-constant refactoring to maintain simplicity of the code
+
+Agile project management
+-The standard approach to project management is plan driven. managers draw up a plan for the project showing what should be delivered, when it should be delivered, and who will work on the development of the project deliverables
+-Software managers manage the proect so that the software is delivered on time and within the budget
+-Scrum is an agile project management method focused on managing iterative development
+
+Scrum (images found in repo)
+Three high level phases in the project
+-outline planning phase establishing general objectives for the product and the design of the software architecture.
+-series of fixed length sprint cycles, which each cycle develops an increment of the system.
+-A project closure phase to wrap up the project, complete any required documentation(e.g., system help frames or user manuals), and asses the lessons learned from the project. 
+
+Benefits
+-the product is broken down into a set of manageable and understandable chunks
+-unstable requirements do not hold up progress
+-the whole team has visibility of everything (progress and backlog) and consequently team communication is improved
+-customers see on time delivery increments and gain feedback on how the product works
+-trust between customers and developers is established and a positive culture is created in which everyone expects the project to succes
+
+Issues with agile methods
+Large systems
+-collections of seperate communicating systems where sepereate teams working in different places develop each system
+-when several systems are integrated, a large portion of development goes to system configuration rather than code development(which is the primary focus of agile methods)
+-Large systems have a long procurement and development time so it is difficult to maintain coherent teams who know about the system over that period since people move to other jobs and projects
+
+In summation, there cannot be a single product owner, nor is it possible to focus only on the code of a large system. In order to scale agile up for large systems, there needs to be up front requirements, multiple customer representatives, more documentation, common tooling across development teams, alignment of releases across teams, to name a few
+
+A solution is a multi scrum team:
+Role replication
+-each team has a product owner for their work component and a ScrumMaster
+Product architects
+-each team chooses a product architect and they collaborate to design and evolve the overall system architecture
+Scrum of Scrums
+-there is a daily scrum of scrums where representatives from each team meet to discuss progress and plan work to be done
+
+Reuse based development
+-available component based products are researched and evaluated for the application domain
+-component integration issues are considered
+-a software architecture is designed to accommodate the components
+-components are integrated into the architecture
+-comprehensive testing is conducted to ensure proper functionality
+
+
+
+In summary, all software processes provice for specification, development, validation, and evolution
+-sofware processes are either primarily plan driven or primarily agile
+-while waterfall is plan driven, incremental development may be plan driven or agile, integration/configuration is usually plan driven
+-scrum is widely used project management system agile
+-software processes are increasingly incorporating re-use
+-all processes should be constantly monitored for improvement oppurtinuties
