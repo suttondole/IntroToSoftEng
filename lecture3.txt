@@ -1,0 +1,67 @@
+2/17/2021
+
+Lecture 3
+
+Software requirements engineering and use cases
+-----------------------------------------------
+An engineering process to establish which services the customer requires from a system and the constraints under which it operates and is developed
+
+Requirements range from high level abstract statements of a service or of a system constraint to a detailed mathematical functional specification
+-may be the basis for a bid for a contract, therefore must be open to interpretation
+-may be the basis for the contract itself, therefore must be defined in detail
+
+Agile methods suggest that producing detailed system requirements is a waste of time since requirements change so quickly
+Agile methods usually use incremental requirements engineering and express requirements as 'user stories'
+This is practical for business systems but problematic for systems that require pre delivery analysis or systems developed by several teams
+
+Requirement types:
+-Functionals state what the system is supposed to accomplish
+-Non-functionals provide constraints on the services or functions offered by the system
+-User requirements must be understandable by stakeholders who do not have a technical background
+-System requirements are more detailed requirements and include more technical information
+
+Functional requirements
+-Statements of services the system should provide, how the system should react to particular inputs and how the system should behave in particular situations; what the system is supposed to accomplish
+-Functional requirements should describe the system services in detail
+-also may state what the system should not do
+
+Use cases
+-define interactions between a role (known in the Unified Modeling Language (UML) as an actor) and the software to achieve a goal
+-Use cases reflect functionality needed in a software system
+-can be defined iteratively; they fit well into either agile or plan driven development
+
+UML (Unified Modeling Language)
+-standardized way to visualize the design of a software system
+-It originated at Rational software (now a part of IBM) in the mid 90s
+-the Object Management Group (OMG) adopted it as a standard in 1997, and the International Organization for Standardization (ISO) adopted it in 2005
+-allows us to visualize external interfaces, activities and states, and individual components in a system
+UML use cases:
+-scenario based technique in the UML which identify the actors in an interaction and describe the interaction itself
+-a full set would describe all possible interactions with the system
+-Sequence diagrams showing the sequence of event processing in the system
+-activity diagrams showing the flow of activies performed by the system
+-state diagrams showing the transitions of system state caused by external events and/or conditions
+
+Use case template
+Id: unique identifier
+Name: the use case name
+Actors: human and or systems interacting
+Description: the steps needed to fulfill the use case
+Data: if any
+Stimulus: triggers for this use case
+Response: what success looks like
+Comments: any preconditions or special considerations
+
+Use case example:
+Id: UC001
+Name: Generate Patient Report
+Actors: Manager
+Description:
+1. User logs in
+2. User accesses Patient DB
+3. User requests report
+4. Report is generated/displayed
+Data: Patient DB
+Stimulus: none
+Response: List of current patients is generated
+Comments: User must be pre authorized to access the data and the contents of this report must be pre-specified within the system
