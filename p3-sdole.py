@@ -3,6 +3,7 @@
    Returning the max of three numbers
 """
 
+
 def maxOfThree():
     try:
         first = float(input('Enter first value: '))
@@ -17,3 +18,8 @@ def maxOfThree():
     except:
         print("Please enter a number")
     
+
+def main():
+    maxOfThree()
+
+main()
