@@ -38,7 +38,7 @@ Waterfall model (image found in repo)
 
 Issues:
 Inflexible partitioning of the project into distinct stages makes it difficult to respond to the changing customer requirements
--therefore this model is only appropriate when the requirements are well understood and changed will be fairly limited during the design process.
+-therefore this model is only appropriate when the requirements are well understood and changes will be fairly limited during the design process.
 
 The waterfall model is mostly used for large systems engineering projects where a system is developed at several sites
 -In those circumstances, the plan driven nature of the waterfall model helps coordinate the work.
@@ -47,7 +47,7 @@ The waterfall model is mostly used for large systems engineering projects where 
 Incremental development (image found in repo)
 When an initial set of needs is known, but the full work scope is not
 Benefits
--the cost of accommodating changing customer requirements is reduces
+-the cost of accommodating changing customer requirements is reduced
 -it is easier to get customer feedback on the development work that has been done
 -more rapid delivery and deployment of useful software to the customer is possible
 -it is more effecient to fail "small"
@@ -73,7 +73,7 @@ Some agile techniques include:
 
 Agile project management
 -The standard approach to project management is plan driven. managers draw up a plan for the project showing what should be delivered, when it should be delivered, and who will work on the development of the project deliverables
--Software managers manage the proect so that the software is delivered on time and within the budget
+-Software managers manage the project so that the software is delivered on time and within the budget
 -Scrum is an agile project management method focused on managing iterative development
 
 Scrum (images found in repo)
@@ -87,7 +87,7 @@ Benefits
 -unstable requirements do not hold up progress
 -the whole team has visibility of everything (progress and backlog) and consequently team communication is improved
 -customers see on time delivery increments and gain feedback on how the product works
--trust between customers and developers is established and a positive culture is created in which everyone expects the project to succes
+-trust between customers and developers is established and a positive culture is created in which everyone expects the project to succeed
 
 Issues with agile methods
 Large systems
