@@ -76,14 +76,14 @@ Agile project management
 -Software managers manage the project so that the software is delivered on time and within the budget
 -Scrum is an agile project management method focused on managing iterative development
 
-Scrum (images found in repo)
+Scrum (subset of Agile) (images found in repo)
 Three high level phases in the project
 -outline planning phase establishing general objectives for the product and the design of the software architecture.
 -series of fixed length sprint cycles, which each cycle develops an increment of the system.
 -A project closure phase to wrap up the project, complete any required documentation(e.g., system help frames or user manuals), and asses the lessons learned from the project. 
 
 Benefits
--the product is broken down into a set of manageable and understandable chunks
+-the product is broken down into a set of manageable and understandable chunks (sprints)
 -unstable requirements do not hold up progress
 -the whole team has visibility of everything (progress and backlog) and consequently team communication is improved
 -customers see on time delivery increments and gain feedback on how the product works
@@ -114,7 +114,7 @@ Reuse based development
 
 
 
-In summary, all software processes provice for specification, development, validation, and evolution
+In summary, all software processes provide for specification, development, validation, and evolution
 -sofware processes are either primarily plan driven or primarily agile
 -while waterfall is plan driven, incremental development may be plan driven or agile, integration/configuration is usually plan driven
 -scrum is widely used project management system agile

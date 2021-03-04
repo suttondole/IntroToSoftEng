@@ -3,7 +3,7 @@ Lecture 4
 						Software Modeling and Design
 
 We typically use graphical modeling:
--facilitates discussion about an existing or proposed software system(MOdels need not be complete or completely accurate for this)
+-facilitates discussion about an existing or proposed software system(Models need not be complete or completely accurate for this)
 -documents all or part of an existing software system (models need not be complete but should be accurate)
 -provides a detailed software description that can be used to generate a system implementation (models must be complete and accurate)
 For software, the graphical notation most often used is unified modeling langage
@@ -14,7 +14,7 @@ Some UML diagrams:
 -activity, shows activities involved in a process or in data processing
 -sequence, shows interactions between actors and the system and between system components
 -state, shows how the system reacts to internal and external events
--class, shows the object classes in the sysxtem and the relationship between these classes
+-class, shows the object classes in the system and the relationship between these classes
 
 Context models are used to illustrate the operational context of a system, they show what lies outside the system boundaries
 The position of the system boundary has a profound effect on sys requirements
@@ -37,7 +37,7 @@ Key elements of a sequence diagram
 
 Behavioral models
 captures dynamic behavior of a system as it is executing. They show what happens or what should happen when a system responds to a stimulus from its environment
-You can thing of these stimuli as being two types:
+You can think of these stimuli as being two types:
 -Data: some data arrives that has to be processed by the system
 -Events: some event happens that triggers system processing. Events may have associated data, although this is not always the case
 A procedure call can be thought of as an event
@@ -51,13 +51,13 @@ State machine diagrams(example in repo)
 Class diagrams
 -used when developing an object oriented system model to show the classes in a system and the associations between these classes
 -An object class can be thought of as a general definition of one kind of system object, one that knows things and knows how to do things
--an association is a link between classes that indicates that thereis some relationship between these classes
--When you are developming models during the early stages of the software engineering process, objects often represent something in the real world, such as a patient, prescription, doctor, etc.
+-an association is a link between classes that indicates that there is some relationship between these classes
+-When you are developing models during the early stages of the software engineering process, objects often represent something in the real world, such as a patient, prescription, doctor, etc.
 
 Generalization
 -technique that we use to manage complexity
 -rather than learn the detailed characteristics of every entity that we experience, we place these entities in more general classes(animals, cars, houses, transactions, etc.) and learn the characteristics of these classes
--this allows us to inger that different members of these classes have some common characteristics e.g. squirrels and rats are rodents
+-this allows us to infer that different members of these classes have some common characteristics e.g. squirrels and rats are rodents
 (hierarchy/visualization in repo)
 
 Summary
