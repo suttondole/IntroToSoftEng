@@ -9,7 +9,6 @@ import random
 
 def check(number, numberGuess):
     try:
-        numberGuess = float(input('Take a guess: '))
         ifVal = 0
         if numberGuess < 1 or numberGuess > 20:
             ifVal = 2
@@ -31,6 +30,7 @@ def main():
     name = input('What is your name? \n')
     print("Hi " + name + ", I'm thinking of a number between 1 and 20")
     while counter != 7:
+        numberGuess = float(input('Take a guess: '))
         checker = check(number, numberGuess)
         if checker == -2:
             print("Please enter a number in integer form")

@@ -1,0 +1,104 @@
+Designing a software system
+3/17/2021
+L6
+
+--------------------------------------
+
+Design and implementation:
+software design and implementation is the stage in the software engineering process at which an executable software system is developed. Software design and implementation activites are invariably interleaved.
+
+Build or buy?
+-in a wide range of domains, it is now possible to buy off the shelf systems (COTS) that can be adapted and tailoredto the users' requirements. For example, if you want to implement a medical records system, you can buy a package that is already used in hospitals. It can be cheaper and faster to use this approach rather than developing a system in a conventional programming language.
+-when you develop an application this way, the design process becomes concerned with how to use the configuration features of that system to deliver the system requirements.
+-buying is a form of reuse which is not always desirable
+
+Reuse advantages and disadvantages:
+Advantages-
+. reduces costs and risks as less software is developed from scratch
+. faster delivery and deployment of system
+Disadvantages-
+. Requirements compromises are inevitable so system may not meet real needs of users
+. Loss of control over evolution of reused system elements
+
+Object-oriented design process
+-OOP is widely used for software systems
+-While there are a variety of dif processes, common activities include:
+. defining the context and modes of use of the system;
+. designing the system architecture;
+. identifying the principle system objects;
+. developing design models;
+. specifying object interfaces.
+
+System context and interactions
+-Understanding the relationships between the software that is being designed and its external environment is essential for deciding how to provide the required system functionality and how to structure the system to communicate with its environment.
+-understanding the context lets you establish the boundaries. i.e., which features are in the system being designed and which are in other associated systems
+-system context model is a structural model that demonstrates the other systems in the environment of the system being developed
+-interaction model is a dynamic model that shows how the system interacts with its environment as it is used
+
+Weather station use case diagram and use case description found in repo
+
+Architectual design(overall design and sub system design found in repo)
+-once interactions between the system and its environment have been understood, you use this information for designing the system architecture.
+-you identify the major components that make up the system and their interactions, and then you may organize the components using an architectual pattern such as layered or client server model
+
+Object class identification
+-in OOP, object classes know how to do things
+-approaches to identifying objects:
+. use a gramatical approach based on natural language description of the system
+. base the identification on tangible things in the application domain
+. use a behavioural approach and identify objects based on what participates in what behaviour
+. use a scenario based analysis. The objects, attributes and methods in each scenario are identified.
+
+CRC card for identifying objects and classes
+- class responsibility collaboration (CRC) cards are a brainstorming tool used in the design of OOPs
+. the Class: the name of the object class
+. the Responsibilities: what the class must know and do
+. the Collaborations: the other classes that help the class accomplish its responsibilities
+
+Weather station object classes (CRC cards found in repo)
+-Object class identification in the weather station system may be based on the tangible hardware and data in the system:
+. ground thermometer, anemometer, barometer: application domain objects that are hardware objects related to the instruments in the system.
+. weather station: the basic interface of the weather station to its environment. it therefore reflects the interactions identified in the use case model.
+. weather data: encapsulates the summarized data from the instruments.
+
+Design models
+-show the objects and object classes and relationships between these entities.
+-there are two kinds of design models:
+. structural models describe the static structure of the system in terms of object classes and relationships
+. dynamic models describe the dynamic interactions between objects.
+
+Examples of design models include subsystem models, sequence models, state machine models, use case models, aggregation models, generalization models, etc.
+
+
+Design patterns
+-patterns are a mean of representing, sharing and reusing knowledge.
+-an architectural pattern is a stylized description of good design practice, which has been tried and tested in different environments
+-patterns appear obvious because they appear so often
+-patterns include information about when and when they are not useful
+-patterns may be represented using tabularand graphical descriptions
+
+Patterns and pattern elements
+-name: a meaningful pattern identifier
+-problem description
+-solution description: not a concrete design but a template for a design solution that can be instantiated in different ways
+-consequences: the results and tradeoffs of applying the pattern
+
+Observer pattern example
+
+Name: observer, dependents, publish-subscribe
+Problem: problem of maintaining consistency between/among related objects.
+Solution: a subject and one or more observers are implemented and all observers are notified when subject changes state, and then each observer synchronizes with subject. Subject is a publisher, observers subscribe to the notifications
+Consequences: can vary subjects and observers independently, loosely coupled, supports broadcast. As more observers subscribe to a subject, it can be costly changing the subject. Also if it is a simple broadcast (stating simply that a change has occured but not specifying the change), observers may have significant work finding what has changed.
+
+Design problems
+-to use patterns in your design, you need to recognize that any design problem you are facing may have an associated pattern that can be applied. E.g.,:
+. tell several objects that the state of some other object has changed(observer pattern)
+. tidy up the interfaces to a number of related objects that have often been developed incrementally(Facade pattern)
+. Provide a standard way of accessing the elements in a collection, irrespective of how that collection is implemented(Iterator pattern)
+. allow for the possibility of extending the functionality of an existing class at run time(Decorator pattern)
+See catalog at http://c2.com/cgi/wiki?SoftwareDesignPatternsIndex
+
+Summary
+-the process of OOP includes activities to design the system architecture, identify objects in the system, describe the design using different object models and document the component interfaces.
+-when developing software, you should always consider the possibility of reusing existing software, either as components, services, or complete systems.
+-design patterns are commonly reused.
