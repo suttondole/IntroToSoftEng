@@ -1,0 +1,141 @@
+3/31/2021
+Software reuse
+*************************************************************
+
+-in most engineering disciplines, systems are designed by composing existing components that have been used in other systems
+-as covered, SWEng was more focused on development but now relies on systematic software reuse. (if a company needs a software for banking, they wouldn't hire a programmer to come in and create a program, they simply buy from a company who already created one)
+-can range from system reuse, application reuse, component reuse, all the way down to object and function reuse
+
+Benefits:
+. accelerated development
+. increased dependability
+. lower costs
+. reduce risk
+. standards compliance
+
+Problems:
+. creating, maintaining, and using a component library
+. finding, understanding, and adapting reusable components
+. increased maintenance costs
+. lack of tool support
+. Not invented here (NIH) syndrome
+
+Things to consider when deciding to re-use or not:
+. development schedule for the software
+. expected software lifetime
+. backgroung, skills, and experience of the dev team
+. importance of the software and its nonfunctional requirements
+. application domain
+. execution platform for the software
+
+Application system reuse:
+-software system that can be adapted for different customers without changing the source code of the system
+-typically have generic features and can be used/reused in different environments
+-adapted by using built-in configuration mechanisms that allow the functionality of the system to be tailored to specific customer needs
+-COTS(Commercial Off the Shelf) systems are examples of this:
+.  configurable application systems are generic application systems that may be designed to support a particular business type, business activityy, or a complete business enterprise.
+.  domain specific systems, such as systems to support a business function, provide functionality that is likely to be required by a range of potential users
+
+App system reuse benefits:
+. rapid deployment
+. functionality is clear and well defined, so it's easier to judge whether it is suitable
+. reduced risk
+. businesses can focus on their core activity
+. updates by the owner of the software, not by the customer using it
+
+Problems:
+. requirements may have to be adapted to reflect the functionality and mode of operation of the COTS product
+. may be based on assumptions that are practically impossible to change
+. not well documented so choosing can be difficult
+. may lack local expertise to support systems development
+. owner of program controls support and updates. Things only happen when the owner decides so
+
+Integrated application systems(image found in repo)
+-include two or more application system products and/or legacy application systems
+-use this approach when there is no single app system that meets all of your needs or when you wish to integrate a new application system with systems that you already use
+
+Service oriented interfaces:
+-application system integration can be simplified if a service-oriented approach is used
+-means allowing access to the application systems's functionality through a standard service interface with a service for each discrete unit of functionality.
+
+App system integration issues:
+. lack of control over functionality and performance
+. problems with inter-operability (diff app systems may make diff asssumptions that means integration is difficult)
+. no control over system evolution(could be bad bc developer controls evolution, could be good by benefiting from features not already thought of)
+. support from devs (may not offer support over the lifetime of the product)
+
+Software product lines(image found in repo):
+-have generic functionality that can be adapted and configured for use in a specific context
+-set of apps with a common architecture and shared components, with each app specialized to reflect diff requirements
+
+Product line specialization:
+-platform
+. diff versions of the app are developed for diff platforms
+-environment
+. different versions of the app are created to handle diff operation environments e.g. diff types of communication equipment
+-functional
+. diff versions of the app are created for customers with diff requirements
+-process
+. diff versions of the app are created to support diff business processes
+
+instance of product line development found in repo
+
+Component based reuse:
+-CBSE is an approach to software dev that relies on the reuse of entities called software components
+-emerged from the failure of OOP to support effective reuse. Object classes tend to be too detailed and specific
+-components are more abstract than object classes and can be developed and used as stand alone service providers
+. Independent components specified by their interfaces
+. component standards to faciliate component integration
+. middleware that provides support for component interoperability
+. dev process that is geared to reuse
+
+CBSE design principles:
+-apart from benefits of reuse, CBSE is based on sound SE design principles
+. independent so do not interfere with each other
+. implementations are well hidden
+. communication is through well defined interfaces
+. component can be replaced by another if its interface is maintained
+. component infrastructures offer a range of standard services
+-standards need to be established so that components can talk with each other and intermingle
+. unfortunately, several competing component standards were established. these have hindered the reason why CBSE was created, and different approaches dont work well together
+
+In short, they should be composable, deployable, documented, independent, and standardized
+
+Requiring interface does not mean the component is not independent. The component shouldn't be written to work with a specific component, rather should be able to interact with other components that provide interface
+
+Service oriented SE
+-executable service is a type of independent component. It has a provides interface but not a requires interface
+
+Component models(basic elements found in repo)
+-definitions of standards for component implementatio, documentation, and deployment
+-examples are:
+. EJB (Enterprise Java Beans)
+. COM+ (.NET)
+. Corba component model
+-the component model specifies how interfaces should be defined and the elements that should be included in an interface definition
+
+Middleware support
+-component models are the basis for middleware tha provides support for executing components
+-implementations provide:
+. platform services that allow components written according to the model to communicate
+. support services that are application independent services used by different components
+-to use services provided by a model, components are deployed in a container. This is a set of interfaces used to access the service implementations
+
+CBSE for reuse
+-should reflect stable romain abstractions
+-should hide state representation
+-should be as independent as possible
+-should publish exceptions through the component interface
+-obviously, the more general a interface the greater the reusability though results in less usability.
+
+How to make CBSE more reusable
+-remove app specific methods
+-change names to make them more general
+-add methods to broaden coverage
+-add configuration interface for component adaptation
+-integrate required components to reduce dependencies
+-make exception handling consistent
+
+Issues with ^
+-generic components may be less space efficient and may have longer execution times than their specific equivalents
+-cost is typically higher for reusable software hence making something more reusable should be an organizational cost rather than a specific project cost

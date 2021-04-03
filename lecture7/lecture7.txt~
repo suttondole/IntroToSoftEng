@@ -1,0 +1,56 @@
+3/31/2021
+Software reuse
+*************************************************************
+
+-in most engineering disciplines, systems are designed by composing existing components that have been used in other systems
+-as covered, SWEng was more focused on development but now relies on systematic software reuse. (if a company needs a software for banking, they wouldn't hire a programmer to come in and create a program, they simply buy from a company who already created one)
+-can range from system reuse, application reuse, component reuse, all the way down to object and function reuse
+
+Benefits:
+. accelerated development
+. increased dependability
+. lower costs
+. reduce risk
+. standards compliance
+
+Problems:
+. creating, maintaining, and using a component library
+. finding, understanding, and adapting reusable components
+. increased maintenance costs
+. lack of tool support
+. Not invented here (NIH) syndrome
+
+Things to consider when deciding to re-use or not:
+. development schedule for the software
+. expected software lifetime
+. backgroung, skills, and experience of the dev team
+. importance of the software and its nonfunctional requirements
+. application domain
+. execution platform for the software
+
+Application system reuse:
+-software system that can be adapted for different customers without changing the source code of the system
+-typically have generic features and can be used/reused in different environments
+-adapted by using built-in configuration mechanisms that allow the functionality of the system to be tailored to specific customer needs
+-COTS(Commercial Off the Shelf) systems are examples of this:
+.  configurable application systems are generic application systems that may be designed to support a particular business type, business activityy, or a complete business enterprise.
+.  domain specific systems, such as systems to support a business function, provide functionality that is likely to be required by a range of potential users
+
+App system reuse benefits:
+. rapid deployment
+. functionality is clear and well defined, so it's easier to judge whether it is suitable
+. reduced risk
+. businesses can focus on their core activity
+. updates by the owner of the software, not by the customer using it
+
+Problems:
+. requirements may have to be adapted to reflect the functionality and mode of operation of the COTS product
+. may be based on assumptions that are practically impossible to change
+. not well documented so choosing can be difficult
+. may lack local expertise to support systems development
+. owner of program controls support and updates. Things only happen when the owner decides so
+
+Integrated application systems(image found in repo)
+-include two or more application system products and/or legacy application systems
+-use this approach when there is no single app system that meets all of your needs or when you wish to integrate a new application system with systems that you already use
+
