@@ -1,0 +1,2 @@
+# IntroToSoftEng
+This course covers most topics covered in the textbook: Software Engineering, Tenth Edition by Ian Sommerville. Topics can be found in each lecture and include but are not limited to the UML, Agile and Scrum processes, Design patterns ect. This class is also suplemented with Python which covers topics ranging from File manipulation to Data input/output. Python assignments can be found under the pythonHw directory.
